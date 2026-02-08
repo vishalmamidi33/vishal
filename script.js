@@ -41,20 +41,20 @@ function goMap() {
 let currentTreasure = 0;
 
 const answers = {
-    1: "nandhu",
-    2: "nandhu ki football jersey shoes yedhi aduguthey adi konistha",
+    1: "vishal",
+    2: "yedhi em ina saki",
     3: "never"
 };
 
 const questions = {
-    1: "who is yourrrr bestesttesttt frndddd ??? (hint open chey)!!",
-    2: "Nandhu ki text chesi aduguu direct ",
+    1: "whom do you love the most (excluding your parents) ??? (hint open chey)!!",
+    2: "what song  remainds you and me?(hint open chey )!!",
     3: "eppudu ina marchipothava nanuuu"
 };
 
 const hints = {
     1: "naaa peruuu chepakapothey narikestthaa",
-    2: "hint em ledhu nandhuuu kitext chesi adugu",
+    2: "hint kavali antey naku propose chey cheptha",
     3: "narkuthaaa marchipothey!!!"
 };
 
@@ -256,3 +256,4 @@ function initScratch() {
         );
     });
 }
+
