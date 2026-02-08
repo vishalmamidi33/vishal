@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Just One Question</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card">
+    <h2>Hey Lasyaaa👋</h2>
+    <p>How was your day today?</p>
+
+    <textarea id="dayInput" placeholder="Tell me honestly..."></textarea>
+    <button onclick="submitDay()">Submit</button>
+</div>
+
+<!-- Smile Popup -->
+<div id="smilePopup" class="popup hidden">
+    <div class="popup-box" id="popupContent">
+        <p>Did you smile today?</p>
+        <button onclick="smiledYes()">Yes 🙂</button>
+        <button onclick="smiledNo()">No 😐</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

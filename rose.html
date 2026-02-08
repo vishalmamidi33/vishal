@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>🌹</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="final-bg">
+    <div class="petals"></div>
+
+
+    <!-- Soft glow -->
+    <div class="rose-glow"></div>
+
+    <!-- 3D Rose -->
+    <div class="rose-3d">
+        🌹
+    </div>
+
+    <!-- Minimal text -->
+    <div class="final-text">
+        Happy Rose Day
+        <span>— from Nandhu</span>
+    </div>
+
+</div>
+
+</body>
+</html>
+<script>
+    const petalsContainer = document.querySelector(".petals");
+
+    for (let i = 0; i < 20; i++) {
+        const petal = document.createElement("div");
+        petal.className = "petal";
+        petal.innerText = "🌸";
+        petal.style.left = Math.random() * 100 + "vw";
+        petal.style.animationDuration = 6 + Math.random() * 6 + "s";
+        petal.style.fontSize = 18 + Math.random() * 20 + "px";
+        petal.style.animationDelay = Math.random() * 5 + "s";
+        petalsContainer.appendChild(petal);
+    }
+</script>
+

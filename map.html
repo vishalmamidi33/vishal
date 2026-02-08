@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Treasure Journey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="rose-counter">
+    🌹 Roses: <span id="roseCount">0</span> / <span id="roseTotal">3</span>
+
+</div>
+
+<h2 class="center">Unlock the Treasures 🗺️</h2>
+<div class="map-card">
+  <div class="path">
+
+    <div class="checkpoint">
+        <div class="treasure" onclick="openTreasure(1)">📦</div>
+        <p>Treasure 1</p>
+    </div>
+
+    <div class="road">• • • •</div>
+
+    <div class="checkpoint">
+        <div class="treasure" onclick="openTreasure(2)">📦</div>
+        <p>Treasure 2</p>
+    </div>
+
+    <div class="road">• • • •</div>
+
+    <div class="checkpoint">
+        <div class="treasure" onclick="openTreasure(3)">📦</div>
+        <p>Treasure 3</p>
+    </div>
+  </div>
+</div>
+<!-- ADDITIONAL TREASURE SECTION -->
+<div id="extraTreasure" class="hidden extra-treasure">
+
+    <h3>✨ Additional Treasure Unlocked</h3>
+
+    <div class="scratch-wrapper">
+        <img src="images/nandhu_img.png" id="hiddenImage" alt="Special Gift">
+        <canvas id="scratchCanvas"></canvas>
+    </div>
+
+    <p>Scratch gently to reveal 🎁</p>
+</div>
+
+
+
+<button id="finalArrow" class="hidden" onclick="goFinal()">➡ Go to Final Page</button>
+
+<!-- Treasure Popup -->
+<div id="treasurePopup" class="popup hidden">
+    <div class="popup-box">
+        <h3 id="treasureTitle"></h3>
+        <p id="treasureQuestion"></p>
+
+        <button onclick="showHint()">Show Hint 💡</button>
+        <p id="hintText"></p>
+
+        <input id="answerInput" placeholder="Type your answer">
+        <button onclick="checkAnswer()">Submit</button>
+
+        <p id="resultText"></p>
+        <button onclick="closeTreasure()">Close</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+<!-- EXTRA HINT POPUP -->
+<div id="extraHint" class="popup hidden">
+    <div class="popup-box">
+        <p>
+            Since you’re the most beautiful girl<br>
+            (<b>NANDHU</b>chepindu) 😌<br><br>
+            we don’t really have the right<br>
+            to stop you from entering 💖
+            and also nandhu mrng rose ichindu anta ka <br><br>
+            Nandhu sent a gift for you…<br>
+            open it 🎁
+        </p>
+        <button onclick="closeExtraHint()">Close</button>
+    </div>
+</div>
+
+<!-- GIFT BOX -->
+<div id="giftBox" class="hidden" onclick="openGift()">
+    🎁
+    <p>Tap to open</p>
+</div>
+
+</body>
+</html>
